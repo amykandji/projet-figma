@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: white;
+}
+
+header{
+    height: 100vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home_page{
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home_page a{
+    color: rgb(7, 6, 4);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.home_page a:hover {
+    /* color: rgb(187, 66, 32); */
+    text-decoration: underline;
+}
+
+.home_page .logo{
+    width: 70px;
+}
+
+
+.home_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: orange;
+   
+}
+
+.home_page .home_links ul{
+    display:flex;
+
+}
+
+.home_page .home_links ul li{
+   margin: 0 30px;
+
+} 
+
+.home{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.dropdown {
+    color: rgb(179, 174, 174);
+    cursor: pointer;
+}
+
+.login {
+    color: white;
+    font-size: 16px;
+}
+
+.signup {
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.nav-right{
+   display:flex ;
+   gap: 20px;
+    
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #edebeb;
+    margin: 20px auto;
+    width: 100%;
+}
+/*section1*/
+.p1{
+    color: darkorange;
+    text-align: center;
+   
+
+}
+.p2{
+    text-align: left;
+}
+.p3{
+    text-align: left;
+}
+.tours-container-p{
+    display: flex; /* Utiliser flexbox pour une disposition horizontale */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis pour le conteneur */
+    margin-bottom: 10%;
+    
+}
+
+.tour-card {
+    background-color: white; /* Couleur de fond de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le style */
+    width: 250px; /* Largeur fixe pour les cartes */
+    margin: 15px; /* Espacement entre les cartes */
+    text-align: center; /* Centre le texte */
+    padding: 15px; /* Espacement à l'intérieur de la carte */
+    align-items: center;
+}
+
+.tour-card img {
+    width: 100%; /* Image remplit toute la largeur */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut de l'image */
+}
+
+
+h2 {
+    margin: 10px 0; /* Marge autour du titre */
+    color: #333; /* Couleur du texte */
+    text-align: justify;
+}
+
+
+
+.read-more {
+    display: inline-block; /* Pour le style du bouton */
+    margin-top: 10px; /* Espace au-dessus du lien */
+    color: #FF914D; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/*section3*/
+
+.p1{
+    color: darkorange;
+    text-align: center;
+   
+
+}
+.p2{
+    text-align: left;
+}
+.p3{
+    text-align: left;
+}
+.tours-container-p{
+    display: flex; /* Utiliser flexbox pour une disposition horizontale */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis pour le conteneur */
+    margin-bottom: 1%;
+    
+}
+
+.tour-card {
+    background-color: white; /* Couleur de fond de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le style */
+    width: 250px; /* Largeur fixe pour les cartes */
+    margin: 15px; /* Espacement entre les cartes */
+    text-align: center; /* Centre le texte */
+    padding: 15px; /* Espacement à l'intérieur de la carte */
+    align-items: center;
+}
+
+.tour-card img {
+    width: 100%; /* Image remplit toute la largeur */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut de l'image */
+}
+
+
+h2 {
+    margin: 10px 0; /* Marge autour du titre */
+    color: #333; /* Couleur du texte */
+    text-align: justify;
+}
+
+p {
+    margin: 5px 0; /* Marge autour des paragraphes */
+    color: #393735; /* Couleur du texte */
+    
+}
+
+.read-more {
+    display: inline-block; /* Pour le style du bouton */
+    margin-top: 10px; /* Espace au-dessus du lien */
+    color: #FF914D; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+    
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Soulignement au survol */
+    
+}
+
+/*section4*/
+.h1{
+    text-align: center;
+}
+.p3{
+    text-align: left;
+}
+.pe{
+    text-align: left;
+   
+}
+.tours-container-p{
+    display: flex; /* Utiliser flexbox pour une disposition horizontale */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis pour le conteneur */
+    margin-bottom: 1%;
+    
+}
+
+.tour-card {
+    background-color: white; /* Couleur de fond de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    
+    width: 250px; /* Largeur fixe pour les cartes */
+    margin: 15px; /* Espacement entre les cartes */
+    text-align: center; /* Centre le texte */
+    padding: 15px; /* Espacement à l'intérieur de la carte */
+    align-items: center;
+}
+
+.tour-card img {
+    width: 100%; /* Image remplit toute la largeur */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut de l'image */
+
+}
+
+
+h2 {
+    margin: 10px 0; /* Marge autour du titre */
+    color: #333; /* Couleur du texte */
+    text-align: justify;
+}
+
+
+.read-more {
+    display: inline-block; /* Pour le style du bouton */
+    margin-top: 10px; /* Espace au-dessus du lien */
+    color: #FF914D; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+    
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Soulignement au survol */
+    
+}
+
