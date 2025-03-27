@@ -5,6 +5,8 @@
     text-transform: none;
     box-sizing: border-box;
     list-style: none;
+    margin-top: 15px;
+    
 }
 
 body{
@@ -93,6 +95,7 @@ body{
 .nav-right{
    display:flex ;
    gap: 20px;
+   align-items: center;
     
 }
 
@@ -100,15 +103,15 @@ body{
 
 /*section1*/
 .titre{
-    height: 308px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     justify-content: center;
     font-family: courguette,Narrow;
     color: #fff;
     text-align: center;
+    margin-bottom: 20px;
+    margin: 5%;
     
 }
 .btn-book{
@@ -122,6 +125,7 @@ body{
     cursor: pointer; /* Change le curseur au survol */
     transition: background 0.3s ease; /* Animation pour le survol */
     background-color: rgba(255, 255, 255, 0.2); /* Légère couleur de fond au survol */
+    margin: 5%;
 
 }
 
@@ -130,25 +134,23 @@ body{
 
 .content-espace-p{
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    
+    
+  
 }
 .box-un-img {
     width: 500px; /* Nouvelle largeur fixe */
     border-radius: 25px;
-    /* margin-bottom: 20px; */
-    position: relative;
-    top: 180px;
-    margin-left: 180px;
 }
 .box-deux{
     text-align: left;
     gap: 40px;
     align-items: center;
     width: 600px;
-    margin-top: 80px;
     position: relative;
-    top: 150px;
     text-align: left; 
     margin-left: 5%;
 
@@ -192,10 +194,10 @@ body{
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to right, #FFD2A5, #FF914D);
-    padding: 5px;
+    padding: 10%;
     height: 250px;
-    margin-bottom: 5%;
-    margin-top: 40%;
+    margin-bottom: 20px;
+    
     
     
 }
@@ -207,7 +209,7 @@ body{
     width: 200px;
     text-align: center;
     margin: 10px;
-    gap: -123px;
+    gap: -15px;
     
    
     
@@ -300,25 +302,28 @@ body{
 
 /*section5*/
 .header-container {
-    background: #2b2b2b;
-    padding: 20px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligner le logo à gauche */
-    
+    text-align: center;
+    background-color: #2b2b2b; /* Assurez-vous que c'est bien la couleur du fond */
+    padding: 20px 0; /* Ajoute un peu d'espace autour du logo */
 }
 
 .logo {
-    width: 150px;
-   
-
+    max-width: 150px; /* Ajuste la taille du logo */
+    display: block;
+    margin-left: 5%;
+    
 }
 
 .tirer {
-
-    width: 100%;
-    margin: 0;
+    display: none; /* Cache complètement la ligne blanche */
+    height: 1px;
+    margin: 20px auto;
 }
+
+.footer {
+    margin-top: -5px; /* Ajuste la position du footer si nécessaire */
+}
+
 
 
 /* FOOTER */
@@ -353,9 +358,9 @@ body{
 }
 
 .footer-column {
-    min-width: 180px;
-    margin-right: 10%;
-    text-align: left;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
 }
 
 .footer-column h3 {

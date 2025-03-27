@@ -1,0 +1,160 @@
+*{
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+   
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: white;
+}
+.home_page{
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.home_page a{
+    color: rgb(7, 6, 4);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.home_page a:hover {
+    /* color: rgb(187, 66, 32); */
+    text-decoration: underline;
+}
+
+.home_page .logo{
+    width: 70px;
+}
+
+
+.home_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: orange;
+   
+}
+
+.home_page .home_links ul{
+    display:flex;
+
+}
+
+.home_page .home_links ul li{
+   margin: 0 30px;
+
+} 
+
+.home{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.dropdown {
+    color: rgb(179, 174, 174);
+    cursor: pointer;
+}
+
+.login {
+    color: white;
+    font-size: 16px;
+}
+
+.signup {
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-right{
+   display:flex ;
+   gap: 20px;
+   align-items: center;
+    
+}
+hr {
+   
+    height: 1px;
+    margin: 0;
+    width: 100%;
+}
+/* section1 */
+
+.booking-steps {
+    display: flex;
+    text-align: center;
+    background-color: #fff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.step {
+    display: flex;
+    flex: 1;
+    position: relative; /* Nécessaire pour la ligne entre les étapes */
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eaeaea; /* Couleur par défaut */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999; /* Couleur par défaut du texte */
+    z-index: 1; /* Pour s'assurer que le cercle est au-dessus de la ligne */
+}
+
+.step-label {
+    margin-top: 10%;
+    color: #999; /* Couleur par défaut du texte */
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Active Step */
+.step.active .step-circle {
+    background-color: #ff8c00; /* Orange pour l'étape active */
+    color: #fff; /* Texte blanc */
+}
+
+.step.active .step-label {
+    color: #ff8c00; /* Couleur orange pour le texte de l'étape active */
+}
+
+/* Ligne entre les étapes */
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #ddd; /* Couleur de la ligne */
+    top: 20px; /* Ajustez selon vos besoins */
+    left: 50%;
+    z-index: 0; /* Ligne derrière les cercles */
+    transform: translateX(-50%); /* Centrer la ligne */
+}
+
+/* Ajustement pour que la ligne soit collée aux cercles */
+.step:last-child .step-circle {
+    margin-bottom: 20px; /* Espacement entre la ligne et le cercle */
+}

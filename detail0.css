@@ -1,0 +1,558 @@
+*{
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+   
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: white;
+}
+.home_page{
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.home_page a{
+    color: rgb(7, 6, 4);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.home_page a:hover {
+    /* color: rgb(187, 66, 32); */
+    text-decoration: underline;
+}
+
+.home_page .logo{
+    width: 70px;
+}
+
+
+.home_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: orange;
+   
+}
+
+.home_page .home_links ul{
+    display:flex;
+
+}
+
+.home_page .home_links ul li{
+   margin: 0 30px;
+
+} 
+
+.home{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.dropdown {
+    color: rgb(179, 174, 174);
+    cursor: pointer;
+}
+
+.login {
+    color: white;
+    font-size: 16px;
+}
+
+.signup {
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.nav-right{
+   display:flex ;
+   gap: 20px;
+    align-items: center;
+}
+hr {
+   
+    height: 1px;
+    margin: 0;
+    width: 100%;
+}
+
+/*section1*/
+
+.content-espace-p{
+    display: flex;
+    justify-content: start;
+    margin-top: 5%;
+    
+    
+  
+}
+.box-un-img {
+    width: 80%; 
+    margin-left: 15%;
+    margin-bottom: 0;
+}
+.box-deux{
+    padding: 15px;
+}
+.price{
+    color: #fa8b02;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+}
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.calendar {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Bordure ajoutée */
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.calendar-header .nav {
+    display: flex;
+    gap: 10px;
+}
+.calendar-header span {
+    cursor: pointer;
+    user-select: none;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+.day {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.day:hover {
+    background: #eee;
+}
+.selected {
+    background: orange;
+    color: white;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-container::after {
+    content: "\1F551"; /* Icône horloge */
+    font-size: 18px;
+    position: absolute;
+    right: 12px;
+    color: #aaa;
+    pointer-events: none;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #aaa;
+}
+input:focus {
+    border-color: #aaa;
+}
+input:valid {
+    color: black;
+}
+.btn {
+    width: 100%;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: darkorange;
+}
+
+
+
+/* section2*/
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 1rem;
+    padding: 100px;
+}
+.section-2 .les-images{
+    scale: 0.9;
+}
+.section-2 .les-images .images-enfants{
+    display: flex;
+    margin-top: 20px;
+    gap: 1.3rem;
+}
+
+@media screen and (max-width: 567px) {
+    .section4 {
+        margin-left: 0px;
+    }
+    .section4 .card-mere{
+        grid-template-columns: repeat(1, 4fr);
+        margin: 10px;
+    }
+}
+/* section3 */
+
+.details-container {
+   
+    padding-left: 150px;
+    border-radius: 8px;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    margin-left: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+   
+}
+
+.details-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.details-list li strong {
+    margin-left: 5px;
+}
+/* section4 */
+
+.gallery-container {
+    top: 200%;
+    
+}
+.galery{
+    padding-left: 10%;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.nav-btn {
+    background: #ffa500;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+    height: 15%;
+    width: 15%;
+}
+
+.nav-btn.prev {
+    background: #ddd;
+    color: black;
+}
+
+
+
+.gallery {
+    display: flex;
+    margin-top: 10px;
+    gap: 1.3rem;
+    width: 80%;
+    padding-left: 140px;
+    border-radius: 5px;
+}
+
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+.large {
+    flex: 2; /* Image principale plus grande */
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.gallery-item.tall {
+    flex: 1;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .large {
+        flex: 1;
+    }
+}
+/* section5 */
+
+.testimonials h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 12%;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.testimonial-card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Assurez-vous qu'il soit bien visible */
+}
+
+
+.testimonial-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.quote {
+    font-size: 30px;
+    color: #f8c291;
+    font-weight: bold;
+}
+
+.end-quote {
+    text-align: right;
+    display: block;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.nav-btn {
+    background: #ffa500;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+    height: 15%;
+    width: 15%;
+}
+
+.nav-btn.prev {
+    background: #ddd;
+    color: black;
+}
+
+/* section6 */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 5%;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-right: 1000px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: orange;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: orange;
+}
+
+.footer-column p {
+    font-size: 14px;
+}
+
+.footer-column i {
+    margin-right: 8px;
+    color: orange;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}

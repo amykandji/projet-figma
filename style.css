@@ -95,6 +95,7 @@ header{
 .nav-right{
    display:flex ;
    gap: 20px;
+   align-items: center;
     
 }
 
@@ -637,7 +638,7 @@ footer {
     width: 460px;
     height: 400px;
     position: relative;
-    top: 60px;
+    top: 40px;
     
 }
 
@@ -811,23 +812,15 @@ footer {
 
 .social-media {
     display: flex;
-    gap: 10px; /* Réduction de l'espace entre les icônes */
+    gap: 20%; /* Réduction de l'espace entre les icônes */
+    
 }
 
-.social-media a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px; /* Taille du cercle */
-    height: 35px;
-    background-color: orange; /* Cercle orange */
-    border-radius: 50%;
-    transition: background 0.3s;
-}
+
 
 .social-media a img {
-    width: 18px; /* Taille réduite des icônes */
-    height: 18px;
+    width: 30px; /* Taille réduite des icônes */
+    height: 30px;
 }
 
 .social-media a:hover {

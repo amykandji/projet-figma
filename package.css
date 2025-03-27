@@ -12,12 +12,12 @@ body{
     background-image: white;
 }
 
-header{
+/* header{
     height: 100vh;
     width:100vw;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 .home_page{
@@ -28,6 +28,7 @@ header{
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+   
 }
 
 .home_page a{
@@ -95,71 +96,60 @@ header{
 .nav-right{
    display:flex ;
    gap: 20px;
+   align-items: center;
     
 }
 hr {
-    border: 0;
-    height: 1px;
-    background: #edebeb;
-    margin: 20px auto;
-    width: 100%;
-}
-/*section1*/
-.p1{
-    color: darkorange;
-    text-align: center;
    
+    height: 1px;
+    margin: 0;
+    width: 90px;
+}
 
-}
-.p2{
-    text-align: left;
-}
-.p3{
-    text-align: left;
-}
-.tours-container-p{
-    display: flex; /* Utiliser flexbox pour une disposition horizontale */
-    justify-content: center; /* Centre les cartes horizontalement */
-    padding: 20px;
-    border-radius: 10px; /* Coins arrondis pour le conteneur */
-    margin-bottom: 10%;
+/*section1*/
+.section1 .card-tour-mere{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
+    gap: 20px;
+  
     
 }
 
-.tour-card {
-    background-color: white; /* Couleur de fond de la carte */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le style */
-    width: 250px; /* Largeur fixe pour les cartes */
-    margin: 15px; /* Espacement entre les cartes */
-    text-align: center; /* Centre le texte */
-    padding: 15px; /* Espacement à l'intérieur de la carte */
-    align-items: center;
+.section1 .card-tour-mere .card-tour .image img{
+    width: 100%;
 }
-
-.tour-card img {
-    width: 100%; /* Image remplit toute la largeur */
-    border-radius: 8px 8px 0 0; /* Coins arrondis en haut de l'image */
-}
-
-
-h2 {
-    margin: 10px 0; /* Marge autour du titre */
-    color: #333; /* Couleur du texte */
-    text-align: justify;
-}
-
-
 
 .read-more {
     display: inline-block; /* Pour le style du bouton */
     margin-top: 10px; /* Espace au-dessus du lien */
     color: #FF914D; /* Couleur du lien */
     text-decoration: none; /* Pas de soulignement */
+    margin-bottom: 5%;
 }
 
 .read-more:hover {
     text-decoration: underline; /* Soulignement au survol */
+}
+.times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fa8b02;
+  }
+
+.price {
+    color: #fa8b02;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 567px) {
+    .section1 .card-tour-mere{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 100px;
+        gap: 20px;
+      
+        
+    }
 }
 
 /*section3*/
@@ -176,7 +166,7 @@ h2 {
 .p3{
     text-align: left;
 }
-.tours-container-p{
+.section1 .tours-container-p{
     display: flex; /* Utiliser flexbox pour une disposition horizontale */
     justify-content: center; /* Centre les cartes horizontalement */
     padding: 20px;
@@ -185,10 +175,8 @@ h2 {
     
 }
 
-.tour-card {
-    background-color: white; /* Couleur de fond de la carte */
+.section1 .tours-container-p .tour-card {
     border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le style */
     width: 250px; /* Largeur fixe pour les cartes */
     margin: 15px; /* Espacement entre les cartes */
     text-align: center; /* Centre le texte */
@@ -228,42 +216,40 @@ p {
 }
 
 /*section4*/
-.h1{
-    text-align: center;
+.section4 h1{
+    margin-left: 20px;
 }
-.p3{
-    text-align: left;
-}
-.pe{
-    text-align: left;
-   
-}
-.tours-container-p{
-    display: flex; /* Utiliser flexbox pour une disposition horizontale */
-    justify-content: center; /* Centre les cartes horizontalement */
-    padding: 20px;
-    border-radius: 10px; /* Coins arrondis pour le conteneur */
-    margin-bottom: 1%;
-    
-}
-
-.tour-card {
-    background-color: white; /* Couleur de fond de la carte */
-    border-radius: 8px; /* Coins arrondis */
-    
-    width: 250px; /* Largeur fixe pour les cartes */
-    margin: 15px; /* Espacement entre les cartes */
-    text-align: center; /* Centre le texte */
-    padding: 15px; /* Espacement à l'intérieur de la carte */
+.section4 .card-mere{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 100px;
+    margin-bottom: 5%;
+}
+.service{
+    padding-left: 5%;
+}
+@media screen and (max-width: 567px) {
+    .section4 h1{
+        margin-left: 0px;
+    }
+    .section4 .card-mere{
+        grid-template-columns: repeat(1, 4fr);
+        margin: 10px;
+    }
 }
 
-.tour-card img {
-    width: 100%; /* Image remplit toute la largeur */
-    border-radius: 8px 8px 0 0; /* Coins arrondis en haut de l'image */
-
+.section4 .card-mere .card{
+    display: flex;
+    flex-direction: column;
 }
 
+.section4 .card-mere .card .image img{
+    width: 100%;
+}
 
 h2 {
     margin: 10px 0; /* Marge autour du titre */
@@ -284,4 +270,370 @@ h2 {
     text-decoration: underline; /* Soulignement au survol */
     
 }
+/*section5*/
+
+.booking-section-p {
+    background: linear-gradient(to right, #FFD2A5, #FF914D); /* Dégradé appliqué seulement ici */
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.booking-section-p .booking{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.booking-section-p .booking-h1 h2{
+    text-align: center;
+}
+
+/* Formulaire */
+.booking-form {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 450px;
+    position: relative;
+    top: 10px;
+}
+
+.header {
+    text-align: center; /* Centre tout le texte */
+    font-size: 24px; /* Taille de police pour l'en-tête */
+    margin-bottom: 20px; /* Espace en dessous de l'en-tête */
+}
+/* Titre du formulaire */
+.booking-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 50px; 
+}
+
+/* Sous-titre */
+.booking-form h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Groupement des champs */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Champs de formulaire */
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-box input,
+.input-box select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+}
+
+/* Style du bouton */
+.btn {
+    display: block;
+    width: 100px; /* Ou une autre largeur fixe */
+    padding: 8px; 
+    background: #ff8000;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 15px auto; /* Centre le bouton horizontalement */
+    top: +10%;
+    position: relative;
+    
+}
+
+.btn:hover {
+    background: #e76d00;
+    
+}
+
+/* Image du vélo */
+.bike-image img {
+    width: 460px;
+    height: 400px;
+    position: relative;
+    top: 40px;
+    
+}
+@media screen and (max-width: 567px) {
+    .booking-section-p {
+        background: linear-gradient(to right, #FFD2A5, #FF914D); /* Dégradé appliqué seulement ici */
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        border-radius: 20px;
+        margin-bottom: 5%;
+    }
+}
+/* section6 */
+
+.testimonials h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 12%;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.testimonial-card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Assurez-vous qu'il soit bien visible */
+}
+
+
+.testimonial-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.quote {
+    font-size: 30px;
+    color: #f8c291;
+    font-weight: bold;
+}
+
+.end-quote {
+    text-align: right;
+    display: block;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.nav-btn {
+    background: #ffa500;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+    height: 15%;
+    width: 15%;
+}
+
+.nav-btn.prev {
+    background: #ddd;
+    color: black;
+}
+/* section7 */
+
+.header-container {
+    background: #2b2b2b;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligner le logo à gauche */
+    
+}
+
+.logo {
+    width: 150px;
+   
+
+}
+
+.tirer {
+
+    width: 100%;
+    margin: 0;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #2b2b2b;
+    padding: 40px 0;
+   
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.footer-column {
+    min-width: 180px;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-column ul li i {
+    color: orange;
+    margin-right: 10px;
+}
+
+
+.social-media {
+    display: flex;
+    gap: 20px; /* Réduction de l'espace entre les icônes */
+    padding: 5%;
+    margin-right: 15px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Taille du cercle */
+    height: 35px;
+    background-color: orange; /* Cercle orange */
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-media a img {
+    width: 18px; /* Taille réduite des icônes */
+    height: 18px;
+}
+
+.social-media a:hover {
+    background-color: #ff9800; /* Effet au survol */
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    background: orange;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ff8c00;
+}
+.p{
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px auto;
+    width: 268%;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color:  #222;
+}
+
+
+
 
