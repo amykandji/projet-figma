@@ -296,7 +296,10 @@ p {
     top: 200%;
     
 }
-
+.galery{
+    padding-left: 5%;
+    margin-top: 5%;
+}
 h2 {
     font-size: 22px;
     font-weight: bold;

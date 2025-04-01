@@ -35,6 +35,7 @@ body{
 
 .home_page .logo{
     width: 70px;
+    padding-left: 5%;
 }
 
 
@@ -101,7 +102,7 @@ hr {
     padding: 20px;
     border-radius: 5px;
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 5px;
 }
 
 .step {
@@ -158,3 +159,174 @@ hr {
 .step:last-child .step-circle {
     margin-bottom: 20px; /* Espacement entre la ligne et le cercle */
 }
+/* le calendrier */
+.ahat1{
+    margin-left: 30%;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 500px;
+   
+}
+
+.date-picker i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 8px;
+}
+
+input[type="date"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    cursor: pointer;
+    background: transparent;
+}
+
+.time-picker {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    max-width: 250px;
+}
+
+.time-picker i {
+    font-size: 18px;
+    color: #555;
+}
+
+.time-picker i:first-child {
+    margin-right: 8px; /* Espace entre l'icône d'horloge et l'heure */
+}
+
+.time-picker i:last-child {
+    margin-left: 8px; /* Espace entre l'heure et la flèche */
+    cursor: pointer;
+}
+
+input[type="time"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+}
+
+/* l'horloge */
+.time-picker {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px 12px;
+    max-width: 500px;
+}
+
+.time-picker i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 8px; /* Espace entre l'icône et le champ */
+}
+
+input[type="time"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    cursor: pointer;
+    background: transparent;
+}
+/* texte */
+
+.text {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.text li {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+/* tranche */
+.achat1{
+    margin-left: 80px;
+}
+
+.ticket-box {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+}
+
+.ticket-title {
+    font-weight: bold;
+    color: black;
+}
+
+.ticket-price {
+    color: orange;
+    font-weight: bold;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.count {
+    background: #e0e0e0;
+    color: black;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.ticket-description{
+    color: black;
+    padding: 5px;
+}
+
+/* tranche2 */
