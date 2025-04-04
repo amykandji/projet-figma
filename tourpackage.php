@@ -21,10 +21,10 @@
 
             <div class="home_links">
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li><a href="About.html">AboutUs</a></li>
-                    <li><a href="tourPackage.html">Tourpackages</a></li>
-                    <li><a href="conctactus.html">ContactUs</a></li>
+                    <li class="home"><a href="index.php">Home</a></li>
+                    <li><a href="About.php">AboutUs</a></li>
+                    <li><a href="tourPackage.php">Tourpackages</a></li>
+                    <li><a href="conctactus.php">ContactUs</a></li>
                 </ul>
                
             </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="card-tour">
                 <div class="image">
-                    <a href="detail.html">
+                    <a href="detail.php">
                     <img src="./image/Rectangle 16 (1).png" alt="">
                     </a>
                 </div>
@@ -92,7 +92,7 @@
             </div>
             <div class="card-tour">
                 <div class="image">
-                    <a href="detail1.html">
+                    <a href="detail1.php">
                     <img src="image/Rectangle 161.png" alt="">
                     </a>
                 </div>
@@ -110,7 +110,7 @@
             </div>
             <div class="card-tour">
                 <div class="image">
-                    <a href="detail2.html">
+                    <a href="detail2.php">
                     <img src="./image/Rectangle 16 (3).png" alt="">
                      </a>
                 </div>
@@ -131,7 +131,7 @@
             </div>
             <div class="card-tour">
                 <div class="image">
-                    <a href="detail3.html">
+                    <a href="detail3.php">
                     <img src="./image/Rectangle 61.png" alt="">
                     </a>
                    

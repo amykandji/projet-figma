@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
-    <link rel="stylesheet" href="detail2.css">
+    <link rel="stylesheet" href="detail0.css">
 </head>
 <body>
     <!--header-->
@@ -17,10 +17,10 @@
 
             <div class="home_links">
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li><a href="About.html">AboutUs</a></li>
-                    <li><a href="tourPackage.html">Tourpackages</a></li>
-                    <li><a href="conctactus.html">ContactUs</a></li>
+                    <li class="home"><a href="index.php">Home</a></li>
+                    <li><a href="About.php">AboutUs</a></li>
+                    <li><a href="tourPackage.php">Tourpackages</a></li>
+                    <li><a href="conctactus.php">ContactUs</a></li>
                 </ul>
                
             </div>
@@ -44,16 +44,16 @@
      <section class="section-2">
         <div class="les-images">
             <div class="image-mere">
-                <img src="image/Rectangle 439.png" alt="">
+                <img src="image/Rectangle 393.png" alt="">
             </div>
             <div class="images-enfants">
-                <img src="image/Rectangle 4m0.png" alt="">
-                <img src="image/Rectangle v41.png" alt="">
-                <img src="image/Rectangle 4p2.png" alt="">
+                <img src="image/Rectangle 402.png" alt="">
+                <img src="image/Rectangle 411.png" alt="">
+                <img src="image/Rectangle 420.png" alt="">
             </div>
         </div>
         <div class="box-deux">
-            <h1 class="p1">Tour of the Lucca Hills</h1>
+            <h1 class="p1">Lucca Bike Tour</h1>
             <span>from <span class="price">34$</span></span> <br>
                 <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                     Lorem Ipsum has been the industry's standard dummy text ever since  <br>
@@ -179,7 +179,7 @@
              <!-- section4 -->
               
     <div class="gallery-container">
-        <h2><strong>Gallery</strong></h2>
+        <h2 class="galery"><strong>Gallery</strong></h2>
         <div class="navigation">
             <button class="nav-btn prev">❮</button>
             <button class="nav-btn next">❯</button>
@@ -187,18 +187,18 @@
 
         <div class="gallery">
             <div class="gallery-item large">
-                <img src="image/Rectangle 43p.png" alt="Paysage verdoyant">
+                <img src="image/Rectangle1 43.png" alt="Paysage verdoyant">
             </div>
             <div class="gallery-column">
                 <div class="gallery-item">
-                    <img src="image/Rectangle 4k4.png" alt="Cave à vin">
+                    <img src="image/Rectangle 044.png" alt="Cave à vin">
                 </div>
                 <div class="gallery-item">
-                    <img src="image/Rectangle 4o5 (1).png" alt="Cyclistes en nature">
+                    <img src="image/Rectangle. 45.png" alt="Cyclistes en nature">
                 </div>
             </div>
             <div class="gallery-item tall">
-                <img src="image/Rectangle t46.png" alt="Ville historique">
+                <img src="image/Rectangle ;46.png" alt="Ville historique">
             </div>
         </div>
 

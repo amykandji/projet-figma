@@ -22,10 +22,10 @@
 
             <div class="home_links">
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li><a href="About.html">AboutUs</a></li>
-                    <li><a href="tourPackage.html">Tourpackages</a></li>
-                    <li><a href="conctactus.html">ContactUs</a></li>
+                    <li class="home"><a href="index.php">Home</a></li>
+                    <li><a href="About.php">AboutUs</a></li>
+                    <li><a href="tourPackage.php">Tourpackages</a></li>
+                    <li><a href="conctactus.php">ContactUs</a></li>
                 </ul>
                
             </div>
@@ -37,8 +37,11 @@
                         <option value="Eng">Fr</option>
                     </select></a>
                 </div>
+            
                 <a href="#" class="login">Login</a>
                 <a href="#" class="signup">Sign Up</a>
+            
+                
 
                 
           </div>
